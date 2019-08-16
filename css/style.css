@@ -1,83 +1,107 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300|Volkhov:400,700');
-@import url('https://fonts.googleapis.com/css?family=Lato:700');
-
-
-html{
-	background-color: rgb(237, 197, 40);
-	height: 100%;
-	scroll-behavior: smooth;
-}
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,700,900|Roboto:100,300,400,500,700&display=swap');
 
 body{
-	background-color: rgb(255, 255, 255);
-	height: 100%;
 	margin: 0;
-	padding: 0;
+}
+
+.intro{
+	position: absolute;
+	top: 200px;
+	left: 70px;
+	color: #5D5D5D;
+}
+
+.home{
+	height: 101vh;
+	background-image: url(../images/background.jpg);
+	background-size: 100% 100%;
+}
+
+.nav{
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-size: 18px;
+	position: fixed;
+	right: 50px;
+	top: 50px;
+}
+
+ul{
+	display: inline;
+}
+
+li{
+	list-style-type: none;
+	display: inline;
+	margin: 0 15px;
 }
 
 a{
 	text-decoration: none;
+	color: #5D5D5D;
 }
 
-header{
-	font-family: Lato;
+.intro{
+	font-family: 'Heebo';
 }
 
-a{
-	color: rgb(45, 45, 45);
+.name{
+	font-size: 70px;
+	font-weight: 700;
 }
 
-#header{
-	height: 100%;
-	color: rgb(45, 45, 45);
+.summary{
+	font-size: 35px;
+	font-family: 'Roboto';
+	font-weight: 300;
 }
 
-#nav{
-	text-align: right;
-	margin-left: 25px;
+.yellowFont{
+	color: #EDC528;
 }
 
-#navUl{
-	right: 0;
-	margin: 0;
-	padding: 25px 0 0 0;
+.portfolio,.contact{
+	height: 650px;
+	font-family: 'Heebo';
 }
 
-#email{
-	font-family: Lato;
+.contactContainer{
+	background-color: #EDC528;
+	height: 650px;
+	width: 500px;
 }
 
-#navUl li{
-	display: inline;
-	margin: 5px 25px 5px 5px;
-}
-
-#me{
-	width: 1000px;
-	margin: 0 auto;
+h1{
+	font-weight: 300;
 	font-size: 40px;
-	font-family: Volkhov;
+	margin: 50px 0 25px 55px;
+	color: #5D5D5D;
 }
 
-#bio{
-	margin-top: 150px;
+p{
+	color: #5D5D5D;
+	text-align: right;
+	margin: 25px 55px 0 0;
+	font-size: 20px;
 }
 
-.emphasis{
-	font-size: 1.2em;
-	color: rgb(237, 197, 40);
+.pLeft, .pMiddle, .pRight{
+	height: 325px;
+	width: 375px;
+	background-color: #EDC528;
+	box-shadow: 4px 4px 6px grey;
 }
 
-#name{
-	font-size: 1.2em;
+.dLeft, .dMiddle, .dRight{
+	height: 125px;
+	width: 375px;
+	background-color: #FFFFFF;
+	box-shadow: 4px 4px 6px grey;
 }
 
-#school{
-	color: rgb(45, 45, 45);
-}
-
-#portfolio{
-	height: 100%;
-	background-color: rgb(255, 255, 255);
-	color: rgb(45, 45, 45);
+.projectContainer{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: center;
+	column-gap: 25px;
 }
