@@ -66,7 +66,7 @@ a{
 }
 
 .contactContainer{
-	background-color: #EDC528;
+	background-color: #F7E499;
 	height: 650px;
 	width: 500px;
 }
@@ -88,15 +88,27 @@ p{
 .pLeft, .pMiddle, .pRight{
 	height: 325px;
 	width: 375px;
-	background-color: #EDC528;
-	box-shadow: 4px 4px 6px grey;
+	background-color: #FFFFFF;
+	box-shadow: 4px 4px 10px grey;
+	cursor: pointer;
 }
 
 .dLeft, .dMiddle, .dRight{
 	height: 125px;
 	width: 375px;
 	background-color: #FFFFFF;
-	box-shadow: 4px 4px 6px grey;
+	box-shadow: 4px 4px 10px grey;
+	text-align: center;
+	cursor: pointer;
+}
+
+.dLeft div, .dMiddle div, .dRight div{
+	width: 80%;
+	margin: 45px auto;
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-size: 27px;
+	color: #5D5D5D;
 }
 
 .projectContainer{
@@ -104,4 +116,11 @@ p{
 	grid-template-columns: auto auto auto;
 	justify-content: center;
 	column-gap: 25px;
+}
+
+me, img{
+	height: 200px;
+	width: 200px;
+	margin: 0 auto;
+	border-radius: 50%;
 }
