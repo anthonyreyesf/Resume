@@ -1,7 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo:400,700,900|Roboto:100,300,400,500,700&display=swap');
 
-body,p,h1,h2{
-	margin: 0;
+/* Margin reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Page Configuration */
+
+.contact,.home,.portfolio{
+    height: 100vh;
+    position: relative;
+	font-family: 'Heebo';
+	color: #5D5D5D;
 }
 
 html{
@@ -13,11 +25,7 @@ a{
 	color: #5D5D5D;
 }
 
-.yellowFont{
-	color: #EDC528;
-}
-
-/* Header*/
+/* Header */
 
 .nav{
 	font-family: 'Roboto';
@@ -26,7 +34,10 @@ a{
 	position: fixed;
 	right: 50px;
 	top: 50px;
-	z-index: 1;
+    z-index: 1;
+    opacity: 0;
+    animation: fadeIn ease-out 0.5s forwards;
+    animation-delay: 4.5s;
 }
 
 ul{
@@ -39,32 +50,33 @@ li{
 	margin: 0 15px;
 }
 
-/* Home page */
+/* Home Section */
 
-.intro{
-	position: absolute;
-	top: 200px;
-	left: 70px;
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 .home{
 	background-image: url(../images/background.jpg);
-	background-size: 100% 100%;
+    background-size: 100% 100%;
+    opacity: 0;
+    animation: fadeIn ease-out 0.5s forwards;
+    animation-delay: 0.5s;
 }
 
-.contact,.home,.portfolio{
-	height: 100vh;
-	font-family: 'Heebo';
-	color: #5D5D5D;
-}
-
-.portfolio, .contact{
-	padding-top: 5%;
+.intro{
+	position: absolute;
+	top: 200px;
+    left: 70px;
 }
 
 .name{
 	font-size: 70px;
 	font-weight: 700;
+    opacity: 0;
+    animation: fadeIn ease-out 0.3s forwards;
+    animation-delay: 1.5s;
 }
 
 .summary{
@@ -72,17 +84,41 @@ li{
 	font-family: 'Roboto';
 	font-weight: 300;
 }
-/* Portfolio page */
 
-.portfolio h1{
-	margin: 0 25px;
+.title1{
+    opacity: 0;
+    animation: fadeIn ease-out 0.3s forwards;
+    animation-delay: 2.5s;
 }
+
+.title2{
+    opacity: 0;
+    animation: fadeIn ease-out 0.3s forwards;
+    animation-delay: 3.5s;
+}
+
+.yellowFont{
+	color: #EDC528;
+}
+
+/* Portfolio Section */
+
+.portfolio{
+    padding-top: 40px;
+}
+
+.portfolio h1 {
+    margin-left: 40px;
+    margin-bottom: 25px;
+    font-size: 40px;
+}
+
 .projectContainer{
-	display: grid;
+    margin: 0 auto;
+    display: grid;
 	grid-template-columns: auto auto auto;
-	justify-content: space-around;
+	justify-content: space-between;
 	width: 1200px;
-	margin: 50px auto;
 }
 
 .projectCard{
@@ -107,22 +143,25 @@ li{
 	width: 100%;
 	height: 75px;;
 	text-align: center;
-	bottom: 0;
 }
 
-.portfolio p{
-	text-align: right;
-	margin: 25px 55px 0 0;
-	font-size: 20px;
+.git{
+    color: #5D5D5D;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 30px 0;
+    font-size: 20px;
+    text-align: center;
 }
 
-/* Contact page */
+/* Contact Section */
 
 .contact{
+    padding: 50px;
 	text-align: center;
 }
 
-.me img{
+.myPhoto{
 	height: 200px;
 	width: 200px;
 	margin: 50px 0 0 0;
@@ -137,18 +176,16 @@ li{
 	margin-bottom: 0px;
 }
 
+.social i{
+	margin: 50px 15px;
+}
+
 .social i:hover{
-	transition: .3s ease;
+	transition: .5s ease;
 	opacity: 0.5;
 }
 
-.contact p a{
-	font-weight: 700;
-	color: #5D5D5D;
-}
-
-/* Footer */
-
-.social i{
-	margin: 50px 15px;
+.email{
+    font-weight: 700;
+    color: #EDC528
 }
