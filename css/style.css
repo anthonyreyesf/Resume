@@ -224,8 +224,13 @@ li{
 }
 
 @media (max-width: 375px) {
+    .pageTitle{
+        font-size: 3rem;
+        padding: 5rem 0;
+    }
+
     .intro{
-        padding: 30rem 0 0 3rem;
+        padding-top: 35rem;
     }
 
     .name{
@@ -240,5 +245,11 @@ li{
     
     .summary{
         font-size: 2rem;
+    }
+
+    .aboutText {
+        width: 50%;
+        padding: 3rem 0 3rem 7rem;
+        font-size: 2.5rem;
     }
 }
