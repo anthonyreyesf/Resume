@@ -232,10 +232,6 @@ li{
         padding-top: 35rem;
     }
 
-    .intro, .about, .portfolio, .contact{
-        height: 100%;
-    }
-
     .name{
         font-size: 6rem;
         font-family: 'Open Sans';
