@@ -112,6 +112,12 @@ li{
     width: 100vw;
 }
 
+.aboutText{
+    width: 50%;
+    padding: 5rem 10rem;
+    font-size: 3rem;
+}
+
 
 /* Project Section */
 
@@ -156,6 +162,7 @@ li{
     height: 100vh;
     width: 100vw;
     text-align: center;
+    margin-top: 3rem;
 }
 
 .contact .pageTitle{
@@ -184,13 +191,35 @@ li{
 
 .email{
     font-weight: 700;
+    color: #393f2a;
 }
 
 /* Media Query */
 
+@media (max-width: 1208px) {
+    .project{
+        width: 100%;
+        height: 75vh;
+        margin: 2rem 2rem;
+    }
+}
+
 @media (max-width: 768px) {
-    .intro{
-        padding: 35rem 0 0 7rem;
+    .pageTitle{
+        text-align: center;
+    }
+
+    .intro {
+        padding-top: 42.5rem;
+    }
+
+    .projectContainer{
+        flex-direction: column;
+    }
+
+    .project{
+        height: 50vh;
+        margin: 2rem 0rem;
     }
 }
 
@@ -212,3 +241,4 @@ li{
     .summary{
         font-size: 2rem;
     }
+}
