@@ -223,6 +223,11 @@ li{
 }
 
 @media (max-width: 375px) {
+
+    .nav{
+        display: none;
+    }
+
     .pageTitle{
         font-size: 3rem;
         padding: 5rem 0;
@@ -246,9 +251,18 @@ li{
         font-size: 2rem;
     }
 
+    .project{
+        padding: 3rem 1rem;
+    }
+
     .aboutText {
         width: 60%;
         padding: 3rem 0 3rem 7rem;
         font-size: 2.5rem;
+    }
+
+    .myPhoto{
+        height: 20rem;
+	    width: 20rem;
     }
 }
