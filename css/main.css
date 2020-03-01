@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto:900&display=swap');
+
+h1{
+    font-family: 'Roboto';
+}
+
+p{
+    font-family: 'Raleway';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container table{
+    height: 100%;
+    width: 100%;
+}
+
+.list-group{
+    font-size: 150%;
+}
+
+.aboutText{
+    font-size: 150%;
+    line-height: 1.5;
+    margin-bottom: 5%;
+}
+
+.nav-link{
+    font-size: 125%;
+}
+
+.social i{
+    margin: 0 1.5%;
+}
