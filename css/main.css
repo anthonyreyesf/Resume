@@ -1,36 +1,161 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto:900&display=swap');
-
-h1{
-    font-family: 'Roboto';
-}
-
-p{
-    font-family: 'Raleway';
-}
-
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  color: #3f4250;
 }
 
-.container table{
-    height: 100%;
+a {
+  color: #3f4250;
+}
+
+.btn {
+  border-radius: 0;
+  border-color: #3f4250;
+  color: #3f4250;
+}
+
+.btn:hover {
+  background-color: #3f4250;
+  border-color: #3f4250;
+}
+
+img {
+  width: 75%;
+  height: auto;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color: #ebd89c;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: 1em;
+}
+
+/*
+Home container styling
+*/
+.homeContainer {
+  height: 100vh;
+}
+
+.homeContainer h1 {
+  font-size: 5.5rem;
+}
+
+.homeContainer p {
+  font-size: 1.5rem;
+  color: #ebd89c;
+}
+
+.homeContainer a {
+  margin: 0 0.5rem;
+}
+
+.homeContainer a:hover {
+  color: #ebd89c;
+}
+
+.homeContainer table {
+  height: 100%;
+  width: 100%;
+}
+
+.intro {
+  padding: 0 5rem;
+}
+
+.socials {
+  padding-bottom: 1.1rem;
+}
+
+/*
+About container styling
+*/
+.aboutContainer {
+  padding: 7.5rem 4rem 4rem 4rem;
+}
+
+.col-sm img {
+  opacity: 0.3;
+  transition: 1s;
+}
+
+.col-sm img:hover {
+  opacity: 1;
+}
+
+td {
+  text-align: center;
+}
+
+.aboutP {
+  font-size: 1.75rem;
+}
+
+.col-sm ul {
+  font-size: 1.3rem;
+  padding-left: 0rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-top: 1.25rem;
+}
+
+/*
+Project container styling
+*/
+
+.projectsContainer {
+  height: 100vh;
+  padding: 7.5rem 4rem 4rem 4rem;
+}
+
+/*
+Responsiveness
+*/
+@media (max-width: 360px) {
+  .homeContainer h1 {
+    font-size: 3rem;
+  }
+  .homeContainer p {
+    font-size: 1.2rem;
+    color: #ebd89c;
+  }
+  .intro {
+    padding: 0 2rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .aboutP {
+    font-size: 1.25rem;
+  }
+  .col-sm ul {
+    font-size: 1rem;
+    padding-left: 0rem;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding-top: 1.25rem;
+  }
+  .col-sm img {
+    opacity: 1;
+  }
+  img {
     width: 100%;
-}
-
-.list-group{
-    font-size: 150%;
-}
-
-.aboutText{
-    font-size: 150%;
-    line-height: 1.5;
-    margin-bottom: 5%;
-}
-
-.nav-link{
-    font-size: 125%;
-}
-
-.social i{
-    margin: 0 1.5%;
+    height: auto;
+  }
 }

@@ -1,144 +1,148 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anthony Reyes</title>
-    <script src="https://kit.fontawesome.com/a7193bbf55.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-
+    <script
+      src="https://kit.fontawesome.com/a7193bbf55.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="images/me.png" />
+  </head>
+  <body>
     <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="navbar-nav">
-                <a href="#homeContainer" class="nav-link">Home</a>
-                <a href="#aboutContainer" class="nav-link">About</a>
-                <a href="#projectsContainer" class="nav-link">Projects</a>
-                <a href="#contactContainer" class="nav-link">Contact</a>
-                <a href="files/resume.pdf" target="_blank" download="AnthonyReyesResume" class="nav-link">Resume</a>
-            </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <a
+            href="files/resume.pdf"
+            target="_blank"
+            download="AnthonyReyesResume"
+            class="nav-link"
+            >Resume</a
+          >
         </div>
+      </div>
     </nav>
 
-    <div class="container" id="homeContainer">
-        <table>
-            <tbody>
-              <tr>
-                <td class="align-middle text-center">
-                    <h1 class="display-1">Anthony Reyes</h1>
-                    <p class="lead">Software Engineering student @ Sheridan College</p>
-                    <p class="lead">Graduating August '20</p>
-                    <a href="#aboutContainer"><button type="button" class="btn btn-outline-primary align-bottom">Get to know me!</button></a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+    <div class="homeContainer" id="home">
+      <table>
+        <tr>
+          <td class="align-middle intro text-center">
+            <h1>Anthony Reyes</h1>
+            <p>
+              Software Engineering student @ Sheridan College
+            </p>
+            <div class="socials">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/anthonyreyesf"
+              >
+                <i class="fab fa-linkedin fa-2x"></i
+              ></a>
+              <a target="_blank" href="https://github.com/anthonyreyesf">
+                <i class="fab fa-github-square fa-2x"></i
+              ></a>
+              <a target="_blank" href="files/resume.pdf">
+                <i class="fas fa-file-pdf fa-2x"></i
+              ></a>
+            </div>
+            <a href="#about"
+              ><button type="button" class="btn btn-outline-dark">
+                Get to know me
+              </button></a
+            >
+          </td>
+        </tr>
+      </table>
     </div>
 
-    <div class="container" id="aboutContainer">
-        <table>
-            <tbody>
-              <tr>
-                <td class="align-middle">
-                    <h1 class="display-3">About</h1>
-                    <p class="lead aboutText">I am an aspiring Software Developer who is currently studying Software Engineering at Sheridan College. I am currently working as a <strong>Web Development Specialist</strong> where I am constantly learning new things that can help me solve problems effectively and efficiently</p>
-                    <h3>Experiences:</h3>
-                    <ul class="list-group">
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                          Web Development Specialist - Elevaytion Digital Inc.
-                          <span class="badge badge-primary badge-pill">February 2020 - Present</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                          Barber - Scars & Strops Barbershop
-                          <span class="badge badge-primary badge-pill">August 2020 - Present</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                          Web Designer - Freelance
-                          <span class="badge badge-primary badge-pill">September 2018 - February 2020</span>
-                        </li>
-                      </ul>
-                </td>
-              </tr>
-            </tbody>
+    <div class="aboutContainer" id="about">
+      <h1>About<span style="color: #ebd89c;">.</span></h1>
+      <div class="row">
+        <div class="col-sm">
+          <p class="text-justify aboutP">
+            I am currently studying Software Engineering at Sheridan College. I
+            am passionate about working on fun, intriguing yet interesting
+            projects that make a difference.
+          </p>
+          <h5>Some of my experience include:</h5>
+          <ul>
+            <li>IT support specialist @ Trillium Health Partners</li>
+            <li>Web development specialist @ Elevaytion Digital Inc</li>
+            <li>Web Designer @ Freelance</li>
+          </ul>
+        </div>
+        <div class="col-sm">
+          <table>
+            <tr>
+              <td>
+                <img src="images/trillium.png" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/Elevaytion.png" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  style="width: 7rem; height: auto;"
+                  src="images/me.png"
+                  alt=""
+                />
+              </td>
+            </tr>
           </table>
+        </div>
+      </div>
     </div>
 
-    <div class="container" id="projectsContainer">
-        <table>
-            <tbody>
-                <tr>
-                    <td>
-                        <h1 class="display-3">Projects</h1>
-                        <div class="row row-cols-1 row-cols-md-2">
-                            <div class="col mb-4">
-                              <div class="card">
-                                <img src="images/quickMath.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Java Math App</h5>
-                                  <p class="card-text">Developed a game application with Java that displays a set of operations with an array of cards where the user must press the correct answer as quick as possible.</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col mb-4">
-                              <div class="card">
-                                <img src="images/mixemIG.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Mixemapp</h5>
-                                  <p class="card-text">Contributed to the development of a new version of a social media app.</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col mb-4">
-                              <div class="card">
-                                <div class="spinner-border mx-auto mt-5 mb-5" role="status">
-                                    <span class="sr-only">Loading...</span>
-                                  </div>
-                                <div class="card-body">
-                                  <h5 class="card-title">Coming Soon</h5>
-                                  <p class="card-text">Still in the works.</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col mb-4">
-                              <div class="card">
-                                <img src="images/unit.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Unit Converter</h5>
-                                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="projectsContainer" id="projects">
+      <h1>Projects<span style="color: #ebd89c;">.</span></h1>
+      <p>Coming soon...</p>
     </div>
 
-    <div class="container" id="contactContainer">
-        <table>
-            <tbody>
-              <tr>
-                <td class="align-middle text-center">
-                    <h1 class="display-1">Contact</h1>
-                    <div class="social">
-                        <a target="_blank" href="https://www.linkedin.com/in/anthonyreyesf/"><i class="fab fa-linkedin-in fa-2x"></i></a>
-                        <a target="_blank" href="https://github.com/anthonyreyesf"><i class="fab fa-github fa-2x"></i></a>
-                    </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-    </div>
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <div class="contactContainer" id="contact"></div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/jquery.js"></script>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
