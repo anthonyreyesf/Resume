@@ -24,7 +24,17 @@ img {
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 5.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-top: 1.25rem;
 }
 
 ul {
@@ -40,6 +50,10 @@ ul li::before {
   margin-left: 1em;
 }
 
+p {
+  font-size: 1.75rem;
+}
+
 /*
 Home container styling
 */
@@ -47,12 +61,7 @@ Home container styling
   height: 100vh;
 }
 
-.homeContainer h1 {
-  font-size: 5.5rem;
-}
-
 .homeContainer p {
-  font-size: 1.5rem;
   color: #ebd89c;
 }
 
@@ -97,19 +106,9 @@ td {
   text-align: center;
 }
 
-.aboutP {
-  font-size: 1.75rem;
-}
-
 .col-sm ul {
   font-size: 1.3rem;
   padding-left: 0rem;
-}
-
-h5 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  padding-top: 1.25rem;
 }
 
 /*
@@ -124,38 +123,3 @@ Project container styling
 /*
 Responsiveness
 */
-@media (max-width: 360px) {
-  .homeContainer h1 {
-    font-size: 3rem;
-  }
-  .homeContainer p {
-    font-size: 1.2rem;
-    color: #ebd89c;
-  }
-  .intro {
-    padding: 0 2rem;
-  }
-  h1 {
-    font-size: 3rem;
-  }
-  .aboutP {
-    font-size: 1.25rem;
-  }
-  .col-sm ul {
-    font-size: 1rem;
-    padding-left: 0rem;
-  }
-
-  h5 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    padding-top: 1.25rem;
-  }
-  .col-sm img {
-    opacity: 1;
-  }
-  img {
-    width: 100%;
-    height: auto;
-  }
-}
