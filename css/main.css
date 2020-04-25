@@ -1,125 +1,48 @@
-html {
-  scroll-behavior: smooth;
-  color: #3f4250;
-}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto:wght@400;500&display=swap");
 
-a {
-  color: #3f4250;
-}
-
-.btn {
-  border-radius: 0;
-  border-color: #3f4250;
-  color: #3f4250;
-}
-
-.btn:hover {
-  background-color: #3f4250;
-  border-color: #3f4250;
-}
-
-img {
-  width: 75%;
-  height: auto;
-}
-
-h1 {
-  font-size: 5.5rem;
-}
-
-h2 {
-  font-size: 4rem;
-}
-
-h5 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  padding-top: 1.25rem;
-}
-
-ul {
-  list-style: none;
-}
-
-ul li::before {
-  content: "\2022";
-  color: #ebd89c;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: 1em;
+h1,
+h2,
+h3 {
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-size: 1.5em;
 }
 
 p {
-  font-size: 1.75rem;
+  font-family: "Roboto";
 }
 
-/*
-Home container styling
-*/
-.homeContainer {
-  height: 100vh;
+.fSize {
+  font-size: 1.5em;
 }
 
-.homeContainer p {
-  color: #ebd89c;
+body {
+  background-color: #fafafa;
+  color: #333333;
+  padding: 0 10%;
 }
 
-.homeContainer a {
-  margin: 0 0.5rem;
+.width {
+  width: 60vw;
 }
 
-.homeContainer a:hover {
-  color: #ebd89c;
-}
-
-.homeContainer table {
-  height: 100%;
-  width: 100%;
-}
-
-.intro {
-  padding: 0 5rem;
-}
-
-.socials {
-  padding-bottom: 1.1rem;
-}
-
-/*
-About container styling
-*/
-.aboutContainer {
-  padding: 7.5rem 4rem 4rem 4rem;
-}
-
-.col-sm img {
-  opacity: 0.3;
-  transition: 1s;
-}
-
-.col-sm img:hover {
-  opacity: 1;
-}
-
-td {
+.footer {
   text-align: center;
+  padding-bottom: 5%;
 }
 
-.col-sm ul {
-  font-size: 1.3rem;
-  padding-left: 0rem;
+.paddingTop {
+  padding-top: 7.5%;
 }
 
-/*
-Project container styling
-*/
-
-.projectsContainer {
-  height: 100vh;
-  padding: 7.5rem 4rem 4rem 4rem;
+.projectDesc {
+  font-size: 0.75em;
 }
 
-/*
-Responsiveness
-*/
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 15vw;
+}

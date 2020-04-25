@@ -3,10 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anthony Reyes</title>
-    <script
-      src="https://kit.fontawesome.com/a7193bbf55.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="icon" href="images/me.png" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -14,135 +11,152 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="shortcut icon" href="images/me.png" />
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+    <section>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between"
       >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <div class="navbar-nav">
-          <a href="#home" class="nav-link">Home</a>
-          <a href="#about" class="nav-link">About</a>
-          <a href="#projects" class="nav-link">Projects</a>
-          <a href="#contact" class="nav-link">Contact</a>
-          <a
-            href="files/resume.pdf"
-            target="_blank"
-            download="AnthonyReyesResume"
-            class="nav-link"
-            >Resume</a
-          >
-        </div>
-      </div>
-    </nav>
-
-    <div class="homeContainer" id="home">
-      <table>
-        <tr>
-          <td class="align-middle intro text-center">
-            <h1>Anthony Reyes</h1>
-            <p>
-              Software Engineering student @ Sheridan College
-            </p>
-            <div class="socials">
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/anthonyreyesf"
-              >
-                <i class="fab fa-linkedin fa-2x"></i
-              ></a>
-              <a target="_blank" href="https://github.com/anthonyreyesf">
-                <i class="fab fa-github-square fa-2x"></i
-              ></a>
-              <a target="_blank" href="files/myResume.pdf">
-                <i class="fas fa-file-pdf fa-2x"></i
-              ></a>
-            </div>
-            <a href="#about"
-              ><button type="button" class="btn btn-outline-dark">
-                Get to know me
-              </button></a
+        <h3><span class="navbar-brand mb-0 text-dark">Anthony Reyes</span></h3>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a href="#home" class="nav-item nav-link" href="#">home</a>
+            <a href="#experience" class="nav-item nav-link" href="#"
+              >experience</a
             >
-          </td>
-        </tr>
-      </table>
-    </div>
-
-    <div class="aboutContainer" id="about">
-      <h2>About<span style="color: #ebd89c;">.</span></h2>
-      <div class="row">
-        <div class="col-sm">
-          <p class="text-justify">
-            I am currently studying Software Engineering at Sheridan College. I
-            am passionate about working on interesting, intriguing yet fun
-            projects that make a difference.
-          </p>
-          <h5>Some of my experience include:</h5>
-          <ul>
-            <li>IT support specialist @ Trillium Health Partners</li>
-            <li>Web development specialist @ Elevaytion Digital Inc</li>
-            <li>Web Designer @ Freelance</li>
-          </ul>
+            <a href="#project" class="nav-item nav-link" href="#">projects</a>
+            <a href="#contact" class="nav-item nav-link" href="#">contact</a>
+            <a class="nav-item nav-link" href="#">resume</a>
+          </div>
         </div>
-        <div class="col-sm">
-          <table>
-            <tr>
-              <td>
-                <img src="images/trillium.png" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img src="images/Elevaytion.png" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img
-                  style="width: 7rem; height: auto;"
-                  src="images/me.png"
-                  alt=""
-                />
-              </td>
-            </tr>
-          </table>
+      </nav>
+    </section>
+
+    <section id="home" class="width fSize paddingTop">
+      <div>
+        <h2>Hey, I'm Anthony 👋</h2>
+        <p>
+          I am a Software Developer and a UI/UX enthusiast who is currently
+          studying Software Developement & Network Engineering @ Sheridan
+          College.
+        </p>
+      </div>
+    </section>
+
+    <section id="experience" class="paddingTop fSize">
+      <h2 style="padding-bottom: 0.75em;">Experience</h2>
+      <div class="projectDesc">
+        <div class="d-flex flex-row flex-wrap">
+          <div>
+            <div style="margin-bottom: 0.5em;">
+              <p style="margin: 0;">
+                <b>Elevaytion Digital</b> - Web Development specialist
+              </p>
+              <em>February 2020 - present</em>
+            </div>
+            <div style="margin-bottom: 0.5em;">
+              <p style="margin: 0;">
+                <b>Scars & Strops Barbershop</b> - Barber
+              </p>
+              <em>August 2017 - present</em>
+            </div>
+            <div style="margin-bottom: 0.5em;">
+              <p style="margin: 0;"><b>Freelance</b> - Web Designer</p>
+              <em>September 2018 - February 2020</em>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img src="images/elevaytion.png" alt="" />
+              <img src="images/scars.png" alt="" />
+              <img src="images/me.png" alt="" />
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="projectsContainer" id="projects">
-      <h2>Projects<span style="color: #ebd89c;">.</span></h2>
-      <p>Coming soon...</p>
-    </div>
+    <section id="project" class="paddingTop fSize">
+      <h2 style="padding-bottom: 0.75em;">Projects / Contributions</h2>
+      <div class="projectDesc">
+        <div>
+          <b>COVID-19 Data Visualization</b>
+          <p>
+            Developed a data Visualization tool using a COVID-19 API and the
+            Google Charts API.
+          </p>
+          <p>
+            <a
+              href="https://github.com/anthonyreyesf/DataVisualizationCOVID19"
+              target="_blank"
+              >more info</a
+            >
+          </p>
+        </div>
+        <div>
+          <b>Mixemapp</b>
+          <p>
+            Contributed to the development of the upcoming version of Mixemapp
+            using React Native.
+          </p>
+          <p>
+            <a
+              href="https://apps.apple.com/ca/app/mixemapp/id1462997918"
+              target="_blank"
+              >more info</a
+            >
+          </p>
+        </div>
+        <div>
+          <b>Quick Math</b>
+          <p>
+            Developed a program using Java and JavaFX that displays additions
+            and an array of answers with only one possible answer.
+          </p>
+          <p>
+            <a
+              href="https://github.com/anthonyreyesf/Quick-Math"
+              target="_blank"
+              >more info</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <div class="contactContainer" id="contact"></div>
-
+    <section id="contact" class="footer paddingTop">
+      <a href="mailto:anthonyreyesf@gmail.com"
+        ><p>anthonyreyesf@gmail.com</p></a
+      >
+      <div>
+        <a href="https://github.com/anthonyreyesf"
+          ><i class="fab fa-github-square fa-2x"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/anthonyreyesf/"
+          ><i class="fab fa-linkedin fa-2x"></i
+        ></a>
+        <a href="mailto:anthonyreyesf@gmail.com"
+          ><i class="fas fa-envelope-square fa-2x"></i
+        ></a>
+      </div>
+    </section>
     <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      src="https://kit.fontawesome.com/a7193bbf55.js"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/script.js"></script>
   </body>
 </html>
