@@ -46,3 +46,37 @@ html {
 img {
   width: 15vw;
 }
+
+.fadeinLeft {
+  animation-name: fadeinLeft;
+  animation-duration: 1.5s;
+  transition: ease-in-out;
+}
+
+.fadeinRight {
+  animation-name: fadeinRight;
+  animation-duration: 1.5s;
+  transition: ease-in-out;
+}
+
+@keyframes fadeinLeft {
+  from {
+    margin-left: -75;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeinRight {
+  from {
+    margin-left: 75;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
