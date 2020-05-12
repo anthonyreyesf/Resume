@@ -13,139 +13,146 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <section>
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between"
+    <!-- <nav class="navbar navbar-expand-lg d-flex justify-content-between">
+      <h3><span class="navbar-brand mb-0 text-dark">AR</span></h3>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
       >
-        <h3><span class="navbar-brand mb-0 text-dark">Anthony Reyes</span></h3>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNavAltMarkup"
-        >
-          <div class="navbar-nav">
-            <a href="#home" class="nav-item nav-link" href="#">home</a>
-            <a href="#experience" class="nav-item nav-link" href="#"
-              >experience</a
-            >
-            <a href="#project" class="nav-item nav-link" href="#">projects</a>
-            <a href="#contact" class="nav-item nav-link" href="#">contact</a>
-            <a class="nav-item nav-link" href="#">resume</a>
-          </div>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarNavAltMarkup"
+      >
+        <div class="navbar-nav">
+          <a href="#home" class="nav-item nav-link" href="#">home</a>
+          <a href="#experience" class="nav-item nav-link" href="#"
+            >experience</a
+          >
+          <a href="#project" class="nav-item nav-link" href="#">projects</a>
+          <a href="#contact" class="nav-item nav-link" href="#">contact</a>
+          <a class="nav-item nav-link" href="AnthonyReyes_Resume.pdf">resume</a>
         </div>
-      </nav>
-    </section>
-
-    <section id="home" class="width fSize paddingTop fadeinLeft">
-      <div>
-        <h2>Hey, I'm Anthony 👋</h2>
-        <p>
-          I am a Software Developer and a UI/UX enthusiast who is currently
-          studying Software Developement & Network Engineering @ Sheridan
-          College.
-        </p>
       </div>
-    </section>
+    </nav> -->
 
-    <section id="experience" class="paddingTop fSize fadeinRight">
-      <h2 style="padding-bottom: 0.75em;">Experience</h2>
-      <div class="projectDesc">
-        <div class="d-flex flex-row flex-wrap">
-          <div>
-            <div style="margin-bottom: 0.5em;">
-              <p style="margin: 0;">
-                <b>Elevaytion Digital</b> - Web Development specialist
-              </p>
-              <em>February 2020 - present</em>
-            </div>
-            <div style="margin-bottom: 0.5em;">
-              <p style="margin: 0;">
-                <b>Scars & Strops Barbershop</b> - Barber
-              </p>
-              <em>August 2017 - present</em>
-            </div>
-            <div style="margin-bottom: 0.5em;">
-              <p style="margin: 0;"><b>Freelance</b> - Web Designer</p>
-              <em>September 2018 - February 2020</em>
-            </div>
-          </div>
-          <div>
+    <section class="home">
+      <div class="homeIntro">
+        <div class="homeIntroText">
+          <h3>Hey,</h3>
+          <h1>I'm Anthony</h1>
+          <p>
+            I am a Software Developer and a UI/UX enthusiast who is currently
+            studying Software Developement & Network Engineering @ Sheridan
+            College.
+          </p>
+          <a href="https://github.com/anthonyreyesf" target="_blank"
+            ><i class="fab fa-github fa-lg"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/anthonyreyesf/" target="_blank"
+            ><i class="fab fa-linkedin-in fa-lg"></i
+          ></a>
+          <a href="mailto:anthonyreyesf@gmail.com" target="_blank"
+            ><i class="fas fa-envelope fa-lg"></i
+          ></a>
+        </div>
+        <div class="homeIntroBg"></div>
+      </div>
+      <div class="homeExp">
+        <div class="homeExpText">
+          <h5>EXPERIENCE</h5>
+          <div class="expDiv">
             <div>
-              <img src="images/elevaytion.png" alt="" />
-              <img src="images/scars.png" alt="" />
-              <img src="images/me.png" alt="" />
+              <h4>Web Developemt Specialist</h4>
+              <i>Elevaytion Digital</i>
+            </div>
+            <div>
+              <h4>Barber</h4>
+              <i>Scars & Strops Barbershop</i>
+            </div>
+            <div>
+              <h4>Web Designer</h4>
+              <i>Freelance</i>
             </div>
           </div>
+          <div class="expImg">
+            <img src="images/scars.png" />
+            <h1 class="logo">AR</h1>
+            <img src="images/elevaytion.png" />
+          </div>
+        </div>
+        <div class="homeExpBg"></div>
+      </div>
+
+      <p class="sectionLink">
+        <a href="#projects">some projects</a>
+      </p>
+    </section>
+
+    <section id="projects">
+      <div class="projects">
+        <h3 style="margin-bottom: 1em;">PROJECTS & CONTRIBUTIONS</h3>
+        <div class="projectCard">
+          <h4>COVID-19 Data Visualiation</h4>
+          <p>
+            Developed a data Visualization tool using ReactJS and Chart.js
+            fetched from a COVID-19 API.
+          </p>
+        </div>
+        <div class="projectCard">
+          <h4>Mixemapp</h4>
+          <p>
+            Contributed to the development of the upcoming version of an event
+            management startup using React Native.
+          </p>
+        </div>
+        <div class="projectCard">
+          <h4>Quick Math</h4>
+          <p>
+            Developed a Java application that displays additions and an array of
+            answers with only one possible answer where the user is given a
+            limited amount of time.
+          </p>
+        </div>
+        <div class="tech">
+          <h4 style="margin-bottom: 1.5em;">
+            Some of the technologies I work with
+          </h4>
+          <div>
+            <i class="fab fa-java fa-4x"></i>
+            <i class="fab fa-js fa-4x"></i>
+            <i class="fab fa-react fa-4x"></i>
+            <i class="fab fa-angular fa-4x"></i>
+          </div>
+          <p>
+            Feel free to look at my
+            <a href="AnthonyReyes_Resume.pdf" target="_blank">resume</a> for a
+            full list of my competencies.
+          </p>
         </div>
       </div>
     </section>
 
-    <section id="project" class="paddingTop fSize">
-      <h2 style="padding-bottom: 0.75em;">Projects / Contributions</h2>
-      <div class="projectDesc">
-        <div style="border-bottom: solid 2px #333333; margin-bottom: 0.75em;">
-          <b>COVID-19 Data Visualization</b>
-          <p>
-            Developed a data Visualization tool using a COVID-19 API and the
-            Google Charts API.
-          </p>
-          <a
-            href="https://github.com/anthonyreyesf/DataVisualizationCOVID19"
-            target="_blank"
-            >more info</a
-          >
-        </div>
-        <div style="border-bottom: solid 2px #333333; margin-bottom: 0.75em;">
-          <b>Mixemapp</b>
-          <p>
-            Contributed to the development of the upcoming version of Mixemapp
-            using React Native.
-          </p>
-          <a
-            href="https://apps.apple.com/ca/app/mixemapp/id1462997918"
-            target="_blank"
-            >more info</a
-          >
-        </div>
-        <div style="border-bottom: solid 2px #333333; margin-bottom: 0.75em;">
-          <b>Quick Math</b>
-          <p>
-            Developed a program using Java and JavaFX that displays additions
-            and an array of answers with only one possible answer.
-          </p>
-          <a href="https://github.com/anthonyreyesf/Quick-Math" target="_blank"
-            >more info</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="footer paddingTop">
-      <a href="mailto:anthonyreyesf@gmail.com"
-        ><p>anthonyreyesf@gmail.com</p></a
-      >
+    <footer>
       <div>
-        <a href="https://github.com/anthonyreyesf"
-          ><i class="fab fa-github-square fa-2x"></i
-        ></a>
-        <a href="https://www.linkedin.com/in/anthonyreyesf/"
-          ><i class="fab fa-linkedin fa-2x"></i
-        ></a>
-        <a href="mailto:anthonyreyesf@gmail.com"
-          ><i class="fas fa-envelope-square fa-2x"></i
-        ></a>
+        <b
+          >created by
+          <a
+            href="https://github.com/anthonyreyesf"
+            target="_blank"
+            class="darkAnchor"
+            >Anthony Reyes</a
+          ></b
+        >
+        <p>ps. site still in progress ⚠️</p>
       </div>
-    </section>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

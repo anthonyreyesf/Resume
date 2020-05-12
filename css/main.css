@@ -1,82 +1,223 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto:wght@400;500&display=swap");
-
-h1,
-h2,
-h3 {
-  font-family: "Open Sans";
-  font-weight: 800;
-  font-size: 1.5em;
-}
-
-p {
-  font-family: "Roboto";
-}
-
-.fSize {
-  font-size: 1.5em;
-}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Roboto:wght@400;500;700;900&display=swap");
 
 body {
-  background-color: #fafafa;
-  color: #333333;
-  padding: 0 10%;
-}
-
-.width {
-  width: 60vw;
-}
-
-.footer {
-  text-align: center;
-  padding-bottom: 5%;
-}
-
-.paddingTop {
-  padding: 7.5% 0;
-}
-
-.projectDesc {
-  font-size: 0.75em;
+  background-color: #faf7f7;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-img {
-  width: 15vw;
+.navbar {
+  background-color: #faf7f7;
 }
 
-.fadeinLeft {
-  animation-name: fadeinLeft;
-  animation-duration: 1.5s;
-  transition: ease-in-out;
+h1 {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 3em;
 }
 
-.fadeinRight {
-  animation-name: fadeinRight;
-  animation-duration: 1.5s;
-  transition: ease-in-out;
+h2 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 2.5em;
 }
 
-@keyframes fadeinLeft {
+h3 {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 2em;
+}
+
+h4 {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+p {
+  font-family: "Open Sans";
+}
+
+a {
+  color: #faf7f7;
+}
+
+a:hover {
+  color: #faf7f7;
+}
+
+section {
+  padding: 3em;
+  height: 100vh;
+}
+
+.home {
+  color: #faf7f7;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  column-gap: 1em;
+}
+
+.homeIntro {
+  position: relative;
+  height: 100%;
+}
+
+.homeIntroBg {
+  background: #2d2d2d;
+  height: 100%;
+  animation-name: expandRight;
+  animation-duration: 3s;
+}
+
+.homeIntroText {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 2em;
+}
+
+.homeIntro h1 {
+  font-size: 5em;
+}
+
+.homeIntro p {
+  font-size: 1.25em;
+}
+
+.homeExpText {
+  position: absolute;
+  padding: 2em;
+  color: #2d2d2d;
+  animation-name: fadeLeft;
+  animation-duration: 2s;
+  transition: ease-out;
+}
+
+.homeExpBg {
+  background: #c9c9c9;
+  height: 100%;
+}
+
+i {
+  margin-right: 0.75em;
+}
+
+.expImg {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  justify-content: space-around;
+}
+
+.expImg img {
+  opacity: 0.9;
+  height: 5em;
+  width: auto;
+  transform: translateY(-50%);
+}
+
+.expImg h1 {
+  transform: translateY(-50%);
+}
+
+.expDiv {
+  padding: 2em 0;
+}
+
+.homeExpText div div {
+  margin-bottom: 1.5em;
+}
+
+.homeExpText div h4 {
+  margin: 0;
+}
+
+.logo {
+  font-size: 4em;
+}
+
+.sectionLink {
+  position: absolute;
+  bottom: -5;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-name: fadeUp;
+  animation-duration: 0.5s;
+}
+
+.sectionLink a {
+  color: #2d2d2d;
+}
+
+.projectCard {
+  width: 70%;
+}
+
+.tech {
+  text-align: center;
+  background: #d6dae2;
+  padding: 1.5em;
+  width: 90%;
+  margin: 3em auto;
+}
+
+.tech div i {
+  color: #75757b;
+  margin: 0 0.5em;
+}
+
+.tech p {
+  margin: 1.3em 0 0 0;
+}
+
+.darkAnchor {
+  color: #2d2d2d;
+}
+
+.darkAnchor:hover {
+  color: #2d2d2d;
+}
+
+footer {
+  text-align: center;
+}
+
+@keyframes fadeUp {
   from {
-    margin-left: -75;
-    opacity: 0;
+    bottom: -30;
+    opacity: 0.3;
   }
   to {
-    margin-left: 0;
+    margin-top: -5;
     opacity: 1;
   }
 }
 
-@keyframes fadeinRight {
+@keyframes fadeLeft {
   from {
-    margin-left: 75;
-    opacity: 0;
+    transform: translateX(-10rem);
+    opacity: 0.5;
   }
   to {
-    margin-left: 0;
+    transform: translateX(0);
     opacity: 1;
+  }
+}
+
+@keyframes expandRight {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  50% {
+    width: 100%;
+    height: 3%;
+  }
+  100% {
+    height: 100%;
   }
 }
