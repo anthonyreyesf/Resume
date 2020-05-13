@@ -41,16 +41,15 @@ p {
 }
 
 a {
-  color: #faf7f7;
+  color: #2d2d2d;
 }
 
 a:hover {
-  color: #faf7f7;
+  color: #75757b;
 }
 
 section {
   padding: 3em;
-  height: 100vh;
 }
 
 .home {
@@ -58,6 +57,7 @@ section {
   display: grid;
   grid-template-columns: 70% 30%;
   column-gap: 1em;
+  height: 100vh;
 }
 
 .homeIntro {
@@ -85,6 +85,14 @@ section {
 
 .homeIntro p {
   font-size: 1.25em;
+}
+
+.homeIntroText a {
+  color: #faf7f7;
+}
+
+.homeIntroText a:hover {
+  color: #faf7f7;
 }
 
 .homeExpText {
@@ -149,12 +157,35 @@ i {
   animation-duration: 0.5s;
 }
 
-.sectionLink a {
-  color: #2d2d2d;
-}
-
 .projectCard {
   width: 70%;
+  background-color: #2d2d2d;
+  margin: 0.5em auto;
+  border-radius: 5px;
+  color: #faf7f7;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 30vh;
+}
+
+.projectImg {
+  background-image: url("../images/covid.png");
+  background-size: cover;
+}
+
+.projectImg2 {
+  background-image: url("../images/mixem.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.projectImg3 {
+  background-image: url("../images/quickMath.png");
+  background-size: cover;
+}
+
+.projectText {
+  padding: 1.5em;
 }
 
 .tech {
@@ -172,14 +203,6 @@ i {
 
 .tech p {
   margin: 1.3em 0 0 0;
-}
-
-.darkAnchor {
-  color: #2d2d2d;
-}
-
-.darkAnchor:hover {
-  color: #2d2d2d;
 }
 
 footer {
