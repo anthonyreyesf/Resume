@@ -2,9 +2,21 @@ body {
   margin: 0;
 }
 
-.about {
+html {
+  scroll-behavior: smooth;
+}
+
+section {
   height: 100vh;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+#about {
   padding: 10em;
+  position: relative;
 }
 
 .alignmid {
@@ -14,7 +26,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.alignmid h1 {
+.alignmid h1 span {
   border-right: solid 5px;
   animation: blinkingEffect 0.75s step-end infinite;
   display: inline-block;
@@ -33,6 +45,14 @@ a:hover {
   color: #62756b;
 }
 
+#experience {
+  position: relative;
+}
+
+#experience div {
+  width: 50%;
+}
+
 @keyframes blinkingEffect {
   from,
   to {
@@ -40,5 +60,14 @@ a:hover {
   }
   50% {
     border-color: black;
+  }
+}
+
+@media (max-width: 827px) {
+  #about {
+    padding: 0 5em;
+  }
+  .alignmid {
+    width: 60%;
   }
 }
