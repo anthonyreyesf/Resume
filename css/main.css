@@ -81,6 +81,16 @@ img {
     }
 }
 
+@media (max-width: 375px) {
+    .mb-5 {
+        margin-bottom: 1rem !important;
+    }
+
+    .row {
+        width: 100%;
+    }
+}
+
 /*Background animation*/
 * {
     margin: 0px;
