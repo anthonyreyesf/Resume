@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    color: #434d41;
+    color: #60775b;
     background: #fcfbf7;
 }
 
@@ -28,7 +28,7 @@ h1 {
     font-size: 3em;
     margin-bottom: 0.3em;
     font-weight: 700;
-    color: #3f493d;
+    color: #31422d;
 }
 
 p {
@@ -37,11 +37,12 @@ p {
 }
 
 a {
-    color: #92a58e;
+    color: #31422d;
+    font-weight: 500;
 }
 
 a:hover {
-    color: #384136;
+    color: #31422d;
 }
 
 i {
