@@ -1,7 +1,8 @@
 body {
     margin: 0;
-    color: #60775b;
-    background: #fcfbf7;
+    color: #915D3A;
+    background: #f8f7f3;
+    font-size: 1.3em;
 }
 
 html {
@@ -12,7 +13,7 @@ section {
     height: 100vh;
 }
 
-#home #experience{
+#home, #experience{
     position: relative;
 }
 
@@ -21,32 +22,50 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 4em;
     margin-bottom: 0.3em;
     font-weight: 700;
-    color: #31422d;
+    color: #493425;
 }
 
 p {
-    font-size: 1.2em;
-    line-height: 1.5;
+    line-height: 1.7;
 }
 
 a {
-    color: #31422d;
+    color: #493425;
     font-weight: 500;
 }
 
 a:hover {
-    color: #31422d;
+    color: #493425;
 }
 
 i {
     margin-right: 10px;
+}
+
+.experience {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+}
+
+.experience_list {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    margin-top: 4em;
+}
+
+.experience h1{
+    text-align: center;
+    font-size: 3em;
 }
 
 /*Responsiveness*/
